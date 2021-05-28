@@ -2,6 +2,7 @@ package fr.lernejo;
 
 import java.util.function.BiFunction;
 
+
 public class Sample {
 
     public int op(Operation op, int a, int b) {
@@ -15,7 +16,7 @@ public class Sample {
         return n == 0 ? 1 : n * fact(n - 1);
     }
 
-    enum Operation {
+    public enum Operation {
         ADD((a, b) -> a + b),
         MULT((a, b) -> a * b),
         ;
